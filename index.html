@@ -1,48 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b101a">
-  <meta name="description" content="Matthew Azer — Electrical & Computer Engineering student at Rutgers School of Engineering. Engineering projects in robotics and automation.">
-  <title>Matthew Azer | Engineering Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#24090f">
+<meta name="description" content="Matthew Azer, Electrical &amp; Computer Engineering student at Rutgers School of Engineering. View engineering projects, resume, and contact information.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Engineering Portfolio | Matthew Azer</title>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
-<nav class="nav wrap" aria-label="Main navigation">
- <a class="brand" href="#top" aria-label="Matthew Azer home">MA<span class="brand-dot">.</span></a>
- <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">☰</button>
- <div class="nav-links" id="nav-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#resume">Resume</a><a href="#contact">Contact</a></div>
- <a class="nav-resume" href="resume.html">View Resume ↗</a>
-</nav>
+ <nav class="site-nav container" aria-label="Main navigation">
+  <a class="logo" href="#top" aria-label="Matthew Azer home">MA</a>
+  <div class="nav-links">
+   <a href="#projects">Projects</a>
+   <a href="resume.html">Resume</a>
+   <a href="#contact">Contact</a>
+  </div>
+ </nav>
 </header>
 <main id="main">
-<section class="hero wrap" id="top">
- <div class="hero-copy">
-  <h1>Hi, I'm <span>Matthew Azer.</span></h1>
-  <p class="headline">Electrical &amp; Computer Engineering Student at Rutgers School of Engineering</p>
-  <p class="intro">I’m an Electrical &amp; Computer Engineering student at Rutgers University who loves turning ideas into real, working systems. From developing an autonomous Word Hunt robot to gaining hands-on electrical experience in the field, I’m passionate about solving problems and understanding how hardware and software work together. I’m driven, eager to learn, and always looking for new challenges that push me to grow as an engineer, especially in controls, systems, automation, embedded systems, and robotics.</p>
-  <div class="actions"><a class="btn primary" href="#projects">View projects ↗</a><a class="btn subtle" href="resume.html">View resume ↗</a></div>
+<section class="hero container" id="top" aria-labelledby="hero-heading">
+ <div class="hero-copy"><h1 id="hero-heading">Matthew Azer</h1>
+ <p class="hero-role">Electrical &amp; Computer Engineering Student at Rutgers School of Engineering</p>
+ <p class="hero-intro">I’m an Electrical &amp; Computer Engineering student at Rutgers University who loves turning ideas into real, working systems. From developing an autonomous Word Hunt robot to gaining hands-on electrical experience in the field, I’m passionate about solving problems and understanding how hardware and software work together. I’m driven, eager to learn, and always looking for new challenges that push me to grow as an engineer, especially in controls, systems, automation, embedded systems, and robotics.</p>
+ <div class="hero-actions"><a class="button primary" href="#projects">View Projects <span aria-hidden="true">↗</span></a><a class="button outline" href="resume.html">View Resume <span aria-hidden="true">↗</span></a></div>
  </div>
- <div class="hero-art" aria-hidden="true"><div class="art-grid"></div><div class="orbit o1"></div><div class="orbit o2"></div><div class="core">M<span>A</span></div><div class="art-label l1">// design</div><div class="art-label l2">{ build }</div><div class="art-label l3">01 → 10</div></div>
+ <div class="portrait-wrap"><img class="portrait" src="assets/headshot.webp" alt="Professional headshot of Matthew Azer" width="450" height="450" fetchpriority="high"></div>
 </section>
-<section class="section wrap" id="about">
- <div class="section-kicker">01 / ABOUT</div>
- <div class="about-layout"><h2>A little about <em>me.</em></h2><div><p>I'm an Electrical &amp; Computer Engineering student at Rutgers, interested in how hardware, software, and control systems come together. I enjoy learning through hands-on projects and applying what I learn to real engineering challenges.</p></div></div>
-</section>
-<section class="section wrap" id="projects">
- <div class="section-heading"><div><div class="section-kicker">02 / PROJECTS</div><h2>Projects<span class="accent">.</span></h2></div><p>A few projects I've worked on. I'll be updating this section with detailed photos and write-ups.</p></div>
+<section class="section container" id="projects" aria-labelledby="projects-heading">
+ <div class="section-title"><h2 id="projects-heading">Projects</h2><p>A selection of my engineering work.</p></div>
  <div class="project-grid">
-  <article class="project featured"><div class="project-art robot"><div class="project-overlay"><span class="mini-tag">FEATURED BUILD</span><div class="robot-line">X <span>↗</span> Y</div><div class="grid-letter"><span>W</span><span>O</span><span>R</span><span>D</span><span>H</span><span>U</span><span>N</span><span>T</span><span>R</span><span>O</span><span>B</span><span>O</span><span>T</span><span>X</span><span>Y</span><span>Z</span></div></div></div><div class="project-body"><div class="project-type">ROBOTICS · COMPUTER VISION · AUTOMATION</div><h3>Word Hunt Robot</h3><p>A custom XY plotter that reads a mobile word-game board and automatically swipes solutions using Python, OCR, and motion control.</p></div></article>
-  <article class="project"><div class="project-art traffic"><div class="traffic-light"><i class="red"></i><i class="amber"></i><i class="green"></i></div><div class="traffic-label">SIGNAL / 001</div></div><div class="project-body"><div class="project-type">ELECTRONICS · DIGITAL LOGIC</div><h3>Four-Way Traffic Light</h3><p>A traffic light control project exploring state transitions and the coordination of signals at an intersection.</p></div></article>
+<article class="project-card">
+<a class="card-image" href="word-hunt-robot.html" aria-label="View Word Hunt Robot project"><img src="assets/word-hunt-robot.webp" alt="Autonomous XY plotter hardware" loading="lazy"></a>
+<div class="card-content"><p class="card-meta">Python · Computer Vision · Robotics</p><h3><a href="word-hunt-robot.html">Word Hunt Robot</a></h3><p class="card-description">Autonomous word-solving robot that uses OCR, Python, and XY motion control to recognize Word Hunt boards and physically swipe solutions on a smartphone.</p><a class="text-link" href="word-hunt-robot.html">View project <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="project-card">
+<a class="card-image" href="interactive-digital-heritage-display.html" aria-label="View Interactive Digital Heritage Display project"><img src="assets/heritage-display.webp" alt="Raspberry Pi digital heritage display" loading="lazy"></a>
+<div class="card-content"><p class="card-meta">Raspberry Pi · Web Development · Digital Display</p><h3><a href="interactive-digital-heritage-display.html">Interactive Digital Heritage Display</a></h3><p class="card-description">Raspberry Pi-powered display system that presents rotating visual content and connects users to a custom-built website through an interactive QR-based experience.</p><a class="text-link" href="interactive-digital-heritage-display.html">View project <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="project-card">
+<a class="card-image" href="traffic-light-controller.html" aria-label="View Four-Way Traffic Light Controller project"><img src="assets/traffic-controller.webp" alt="Four-way physical traffic signal assembly" loading="lazy"></a>
+<div class="card-content"><p class="card-meta">Digital Logic · Circuit Design · Timing</p><h3><a href="traffic-light-controller.html">Four-Way Traffic Light Controller</a></h3><p class="card-description">Digital logic-based traffic control system that automates signal sequencing for a four-way intersection using timing circuits, flip-flops, and combinational logic.</p><a class="text-link" href="traffic-light-controller.html">View project <span aria-hidden="true">↗</span></a></div>
+</article>
  </div>
 </section>
-<section class="section wrap resume-section" id="resume"><div><div class="section-kicker">03 / RESUME</div><h2>My resume<span class="accent">.</span></h2><p>Education, experience, and engineering background in one place.</p></div><a class="btn primary" href="resume.html">View resume ↗</a></section>
-<section class="section wrap compact-contact" id="contact"><div class="section-kicker">04 / CONTACT</div><h2>Get in touch<span class="accent">.</span></h2><p>Interested in connecting about engineering, projects, or internship opportunities?</p><div class="actions"><a class="btn primary" href="https://github.com/mazerw2" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><p class="contact-hint">Contact email and LinkedIn link will be added here.</p></section>
+<section class="section container resume-strip" aria-labelledby="resume-heading">
+ <div><h2 id="resume-heading">Resume</h2><p>Education, technical experience, and qualifications.</p></div>
+ <a class="button primary" href="resume.html">View Resume <span aria-hidden="true">↗</span></a>
+</section>
+<section class="section container contact-section" id="contact" aria-labelledby="contact-heading">
+ <div class="section-title"><h2 id="contact-heading">Contact</h2><p>Feel free to get in touch.</p></div>
+ <div class="contact-grid">
+  <div class="contact-item"><span class="contact-label">Email</span><a href="mailto:mazerw2@gmail.com">mazerw2@gmail.com</a></div>
+  <div class="contact-item"><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/matthew-azer-bb7419251/" target="_blank" rel="noopener noreferrer">Matthew Azer ↗</a></div>
+  <div class="contact-item"><span class="contact-label">GitHub</span><a href="https://github.com/mazerw2" target="_blank" rel="noopener noreferrer">mazerw2 ↗</a></div>
+  <div class="contact-item"><span class="contact-label">Phone</span><a href="tel:+17324706655">(732) 470-6655</a></div>
+ </div>
+</section>
 </main>
-<footer class="footer wrap"><span>© <span id="year">2026</span> Matthew Azer</span><a href="#top">Back to top ↑</a></footer>
-</body>
-</html>
+<footer class="site-footer container"><span>© <span id="year">2026</span> Matthew Azer</span><a href="index.html#top">Back to top ↑</a></footer>
+<script src="script.js" defer></script>
+</body></html>

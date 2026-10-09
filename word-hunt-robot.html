@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#24090f">
+<meta name="description" content="An autonomous robot that recognizes a live Word Hunt board, solves for valid words, and physically traces the solutions on a smartphone.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Word Hunt Robot | Matthew Azer</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+ <nav class="site-nav container" aria-label="Main navigation">
+  <a class="logo" href="index.html#top" aria-label="Matthew Azer home">MA</a>
+  <div class="nav-links">
+   <a href="index.html#projects">Projects</a>
+   <a href="resume.html">Resume</a>
+   <a href="index.html#contact">Contact</a>
+  </div>
+ </nav>
+</header>
+<main id="main" class="container internal-page detail-page">
+<a class="back-link" href="index.html#projects">← Back to Projects</a>
+<div class="detail-hero"><div><p class="overline">ROBOTICS / COMPUTER VISION / AUTOMATION</p><h1>Word Hunt Robot</h1><p class="detail-lede">An autonomous robot that recognizes a live Word Hunt board, solves for valid words, and physically traces the solutions on a smartphone.</p></div></div>
+<div class="tech-tags" aria-label="Technologies"><span>Python</span><span>OpenCV</span><span>Tesseract OCR</span><span>Trie / DFS</span><span>GRBL</span><span>G-code</span><span>3D Printing</span></div>
+<div class="feature-image"><figure class="media-figure "><img src="assets/word-hunt-robot.webp" alt="XY plotter, servo stylus, and custom phone holder" loading="lazy"><figcaption>Completed XY plotter system with a servo-actuated capacitive stylus.</figcaption></figure></div><section class="detail-section"><h2>Overview</h2><div class="detail-body"><p>I designed and developed this system to connect computer vision, algorithmic problem solving, and precise physical motion. The robot reads a 4×4 Word Hunt grid from a mirrored smartphone display, determines possible words, and submits them by swiping a capacitive stylus across the screen.</p></div></section>
+<section class="detail-section"><h2>How it works</h2><div class="detail-body"><ol class="feature-list"><li><strong>Board recognition.</strong> OpenCV and Tesseract OCR extract the letters from a live 4×4 game grid.</li><li><strong>Word search.</strong> A Python solver uses a dictionary of more than 129,000 candidate words and trie-based depth-first search to identify valid adjacent-letter paths.</li><li><strong>Motion planning.</strong> The solver maps each letter path to XY coordinates and generates motion commands for the plotter.</li><li><strong>Physical input.</strong> A GRBL-controlled XY mechanism positions the stylus while a servo controls contact with the touchscreen.</li><li><strong>Calibration.</strong> I refined movement speed, acceleration, positioning, and stylus contact to improve accuracy and repeatability.</li></ol></div></section>
+<section class="detail-section"><h2>Mechanical design</h2><div class="detail-body"><p>I also designed a custom, modular 3D-printed support in CAD to locate the phone beneath the plotter. The holder helps preserve grid alignment and keeps the device positioned consistently between runs.</p><figure class="media-figure fit-contain"><img src="assets/word-hunt-cad.webp" alt="CAD model of modular 3D-printed plotter and phone holder" loading="lazy"><figcaption>CAD model of the custom phone/plotter holder with interlocking sections.</figcaption></figure></div></section>
+<section class="detail-section"><h2>Results</h2><div class="detail-body"><p>The integrated system recognizes boards, finds solutions, and executes swipes autonomously. It has submitted 45+ words per game, and I have achieved scores above 60,000 points. The example result shown below is from one completed run.</p><figure class="media-figure result-image"><img src="assets/word-hunt-result.webp" alt="Word Hunt score screen with 41,700 points and 32 words" loading="lazy"><figcaption>Example gameplay result: 41,700 points and 32 words.</figcaption></figure></div></section>
+<section class="detail-section"><h2>Demo video</h2><div class="detail-body"><figure class="media-figure video-figure "><video controls playsinline preload="metadata" poster="assets/word-hunt-video-poster.webp" aria-label="The plotter automatically swiping words on the phone."><source src="assets/word-hunt-demo.mp4" type="video/mp4">Your browser does not support video playback.</video><figcaption>The plotter automatically swiping words on the phone.</figcaption></figure></div></section>
+<div class="detail-bottom"><a class="button outline" href="index.html#projects">← Back to Projects</a><a class="text-link" href="interactive-digital-heritage-display.html">Next Project →</a></div></main><footer class="site-footer container"><span>© <span id="year">2026</span> Matthew Azer</span><a href="index.html#top">Back to top ↑</a></footer>
+<script src="script.js" defer></script>
+</body></html>
