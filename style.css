@@ -1,15 +1,15 @@
 /* Matthew Azer — minimal engineering portfolio */
 :root {
-  --bg: #300707;
-  --surface: #401010;
-  --surface-soft: #4a1515;
-  --border: rgba(255, 237, 231, .19);
-  --text: #ffffff;
-  --muted: #f5efed;
-  --accent: #f0a0a0;
-  --accent-bright: #ffb5ae;
-  --button: #b63333;
-  --button-hover: #cd4545;
+  --bg: #240910;
+  --surface: #301019;
+  --surface-soft: #37161f;
+  --border: rgba(255, 231, 226, .17);
+  --text: #fff9f7;
+  --muted: #eee0dd;
+  --accent: #e89598;
+  --accent-bright: #f4b2b0;
+  --button: #ad4b57;
+  --button-hover: #c15d68;
   --width: 1140px;
 }
 * { box-sizing: border-box; }
@@ -27,7 +27,7 @@ h3 { font-size: 20px; }
 .container { width: min(var(--width), calc(100% - 64px)); margin-inline: auto; }
 .skip { position: absolute; left: -9999px; z-index: 99; background: #fff; color: #17090d; padding: 9px; }
 .skip:focus { left: 12px; top: 12px; }
-.site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--border); background: rgba(48, 7, 7, .97); backdrop-filter: blur(14px); }
+.site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--border); background: rgba(36, 9, 16, .96); backdrop-filter: blur(14px); }
 .site-nav { min-height: 66px; display: flex; justify-content: space-between; align-items: center; gap: 22px; }
 .logo { font: 700 25px/1 'Space Grotesk', sans-serif; letter-spacing: -.095em; color: var(--accent-bright); }
 .logo:hover { color: #fff; }
@@ -44,7 +44,7 @@ h3 { font-size: 20px; }
 .button.primary { background: var(--button); border-color: var(--button); color: #fff; }
 .button.primary:hover { background: var(--button-hover); border-color: var(--button-hover); }
 .button.outline { border-color: rgba(239, 190, 190, .5); }
-.portrait-wrap { width: min(270px, 100%); aspect-ratio: 1; padding: 6px; margin-inline: auto; border: 1px solid rgba(238, 190, 187, .55); border-radius: 50%; background: linear-gradient(145deg, #643131, #3f0e0e); }
+.portrait-wrap { width: min(270px, 100%); aspect-ratio: 1; padding: 6px; margin-inline: auto; border: 1px solid rgba(238, 190, 187, .55); border-radius: 50%; background: linear-gradient(145deg, #6b3943, #37141e); }
 .portrait { border-radius: 50%; width: 100%; height: 100%; object-fit: cover; object-position: center 37%; }
 .section { border-top: 1px solid var(--border); padding-block: 48px 52px; }
 .section-title { display: flex; justify-content: space-between; align-items: baseline; gap: 15px; margin-bottom: 23px; }
@@ -57,7 +57,7 @@ h3 { font-size: 20px; }
 .card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s; }
 .project-card:hover .card-image img { transform: scale(1.025); }
 .project-card:nth-child(2) .card-image img { object-position: center 30%; }
-.project-card:nth-child(3) .card-image img { object-position: center 48%; }
+.project-card:nth-child(3) .card-image img { object-position: center 38%; }
 .card-content { padding: 20px 21px 22px; display: flex; flex: 1; flex-direction: column; }
 .card-meta { color: var(--accent-bright); font-size: 10px; text-transform: uppercase; letter-spacing: .09em; font-weight: 700; line-height: 1.6; margin-bottom: 9px; }
 .card-content h3 { font-size: 20px; letter-spacing: -.035em; margin-bottom: 11px; }
@@ -92,7 +92,7 @@ h3 { font-size: 20px; }
 .tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 31px; }
 .tech-tags span { padding: 5px 11px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--muted); font-size: 11px; font-weight: 600; }
 .media-figure { margin: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-.media-figure img, .media-figure video { width: 100%; object-fit: contain; max-height: 600px; background: #200808; }
+.media-figure img, .media-figure video { width: 100%; object-fit: contain; max-height: 600px; background: #18070c; }
 .media-figure figcaption { padding: 11px 17px 13px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .feature-image { margin-bottom: 33px; }
 .feature-image img { max-height: 565px; }
@@ -109,7 +109,7 @@ h3 { font-size: 20px; }
 .detail-body .fit-contain { background: #eee; }
 .detail-body .fit-contain img { max-height: 420px; background: #f6f6f6; }
 .detail-body .result-image img { max-height: 430px; }
-.video-figure video { max-height: 520px; background: #200808; }
+.video-figure video { max-height: 520px; background: #15090d; }
 .portrait-video { max-width: 470px; margin-inline: auto!important; }
 .portrait-video video { max-height: 570px; }
 .detail-body .portrait-media { max-width: 550px; margin-inline: auto; }
