@@ -1,12 +1,50 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Matthew Azer | Engineering Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b101a">
+  <meta name="description" content="Matthew Azer — Rutgers Electrical & Computer Engineering student. Projects in robotics, automation, computer vision, and embedded systems.">
+  <title>Matthew Azer | Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Matthew Azer</h1>
-    <p>Electrical & Computer Engineering Student at Rutgers University</p>
-    <p>Welcome to my engineering portfolio!</p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Matthew Azer, home">MA<span class="brand-dot">.</span></a>
+      <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      </div>
+      <a class="nav-resume" href="resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> ELECTRICAL & COMPUTER ENGINEERING · RUTGERS UNIVERSITY</div>
+        <h1>Hi, I'm <span>Matthew Azer.</span></h1>
+        <p class="headline">I build things at the intersection of <strong>hardware, software, and automation.</strong></p>
+        <p class="intro">I'm an Electrical & Computer Engineering student at Rutgers University interested in robotics, embedded systems, controls, and systems engineering. I like turning ideas into working prototypes.</p>
+        <div class="actions"><a class="btn primary" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a><a class="btn subtle" href="resume.pdf" target="_blank" rel="noopener">View resume ↓</a></div>
+        <div class="hero-meta"><span>New Brunswick, NJ</span><span class="separator">•</span><span>Engineering student & builder</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="art-grid"></div><div class="orbit o1"></div><div class="orbit o2"></div><div class="core">M<span>A</span></div><div class="art-label l1">// design</div><div class="art-label l2">{ build }</div><div class="art-label l3">01 → 10</div></div>
+    </section>
+    <section class="section wrap" id="about"><div class="section-kicker">01 / ABOUT</div><div class="about-layout"><h2>Curious about how <em>things work.</em><br>Driven to make them better.</h2><div><p>I'm studying Electrical & Computer Engineering at Rutgers University–New Brunswick, with an interest in the space where electronics, software, and real-world systems meet.</p><p>My work spans hands-on field engineering, IT troubleshooting, and personal builds involving motion control and computer vision. I'm particularly interested in opportunities involving automation, robotics, embedded systems, and aerospace & defense.</p></div></div></section>
+    <section class="section wrap" id="projects"><div class="section-heading"><div><div class="section-kicker">02 / PROJECTS</div><h2>Selected work<span class="accent">.</span></h2></div><p>A few things I've designed, built, and learned from.</p></div>
+      <div class="project-grid">
+        <article class="project featured"><div class="project-art robot"><div class="project-overlay"><span class="mini-tag">FEATURED BUILD</span><div class="robot-line">X <span>↗</span> Y</div><div class="grid-letter"><span>W</span><span>O</span><span>R</span><span>D</span><span>H</span><span>U</span><span>N</span><span>T</span><span>R</span><span>O</span><span>B</span><span>O</span><span>T</span><span>X</span><span>Y</span><span>Z</span></div><small>Replace this graphic with a photo or video of your robot</small></div></div><div class="project-body"><div class="project-type">ROBOTICS · COMPUTER VISION · AUTOMATION</div><h3>Word Hunt Robot</h3><p>A custom XY plotter that reads a mobile word-game board and automatically swipes solutions. Built with Python, OCR, motion control, and iterative hardware calibration.</p><div class="tags"><span>Python</span><span>OCR</span><span>GRBL</span><span>Motion Control</span><span>3D Design</span></div></div></article>
+        <article class="project"><div class="project-art traffic"><div class="traffic-light"><i class="red"></i><i class="amber"></i><i class="green"></i></div><div class="traffic-label">SIGNAL / 001</div></div><div class="project-body"><div class="project-type">ELECTRONICS · DIGITAL LOGIC</div><h3>Four-Way Traffic Light</h3><p>A traffic signal control project exploring timing, state transitions, and the coordination of a multi-direction intersection.</p><div class="tags"><span>Digital Logic</span><span>Control Systems</span><span>Circuits</span></div></div></article>
+      </div>
+      <p class="projects-note">More projects coming soon. This site will grow as I build.</p>
+    </section>
+    <section class="section wrap" id="experience"><div class="section-heading"><div><div class="section-kicker">03 / EXPERIENCE</div><h2>Experience<span class="accent">.</span></h2></div></div><div class="timeline"><div class="role"><div class="role-date">SUMMER 2026</div><div class="role-content"><h3>Field Technician Intern</h3><div class="role-org">MasTec / PSE&G</div><p>Performed cathodic-protection voltage testing at 500+ pipeline test stations, documented field measurements digitally, identified unusual readings, and supported safe field operations.</p></div><span class="role-arrow">↗</span></div><div class="role"><div class="role-date">IT EXPERIENCE</div><div class="role-content"><h3>IT Support Experience</h3><div class="role-org">Pillar MSP</div><p>Worked with Microsoft 365, Atera, Ubiquiti, and Microsoft Admin Center while supporting IT operations and troubleshooting workflows.</p></div><span class="role-arrow">↗</span></div></div></section>
+    <section class="section wrap" id="skills"><div class="section-heading"><div><div class="section-kicker">04 / CAPABILITIES</div><h2>Skills & interests<span class="accent">.</span></h2></div></div><div class="skill-grid"><div class="skill-box"><div class="skill-icon">⌘</div><h3>Programming & Tools</h3><p>Python · C (coursework) · GitHub · Microsoft 365</p></div><div class="skill-box"><div class="skill-icon">◎</div><h3>Engineering</h3><p>Motion control · Digital logic · Circuit fundamentals · Technical troubleshooting</p></div><div class="skill-box"><div class="skill-icon">◇</div><h3>Focus Areas</h3><p>Automation · Robotics · Embedded systems · Controls · Systems engineering</p></div></div></section>
+    <section class="contact section wrap" id="contact"><div class="section-kicker">05 / GET IN TOUCH</div><h2>Let's build something <em>meaningful.</em></h2><p>I'm always interested in learning about engineering teams, interesting projects, and internship opportunities.</p><div class="actions"><a class="btn primary" href="https://github.com/mazerw2" target="_blank" rel="noopener noreferrer">My GitHub ↗</a><a class="btn subtle" href="resume.pdf" target="_blank" rel="noopener">Download resume ↓</a></div><p class="contact-hint">Add your preferred professional email and LinkedIn URL here before submitting applications.</p></section>
+  </main>
+  <footer class="footer wrap"><span>© <span id="year">2026</span> Matthew Azer</span><span>Designed and built with intention.</span><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>
